@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <div class="row">
+        <div id="screen">
+          <div id="input"></div>
+          <div id="result"></div>
+        </div>
+        <div id="undo" class="btn">&lt;x</div>
+      </div>
+      <div class="row">
+        <div id="clear" class="btn">c</div>
+        <div id="exponent" class="btn op" data-key="^" data-calc="exponent">x<sup>y</sup></div>
+        <div id="modulus" class="btn op" data-key="%" data-calc="remainder">%</div>
+        <div id="divide" class="btn op" data-key="/" data-calc="divide">&divide;</div>
+      </div>
+      <div class="row">
+        <div id="key7" class="btn num" data-key="7">7</div>
+        <div id="key8" class="btn num" data-key="8">8</div>
+        <div id="key9" class="btn num" data-key="9">9</div>
+        <div id="multiply" class="btn op" data-key="*" data-calc="multiply">&times;</div>
+      </div>
+      <div class="row">
+        <div id="key4" class="btn num" data-key="4">4</div>
+        <div id="key5" class="btn num" data-key="5">5</div>
+        <div id="key6" class="btn num" data-key="6">6</div>
+        <div id="subtract" class="btn op" data-key="-" data-calc="subtract">-</div>
+      </div>
+      <div class="row">
+        <div id="key1" class="btn num" data-key="1">1</div>
+        <div id="key2" class="btn num" data-key="2">2</div>
+        <div id="key3" class="btn num" data-key="3">3</div>
+        <div id="add" class="btn op" data-key="+" data-calc="add">+</div>
+      </div>
+      <div class="row">
+        <div id="sign" class="btn">+/-</div>
+        <div id="key0" class="btn num" data-key="0">0</div>
+        <div id="decimal" class="btn num" data-key=".">.</div>
+        <div id="equal" class="btn">=</div>
+      </div>
+    </main>
+  </body>
+  <script src="script.js" type="text/javascript"></script>
+</html> 
