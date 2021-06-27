@@ -23,7 +23,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex: 1;
   margin: 5px;
   padding-right: 10px;
@@ -31,14 +31,15 @@ main {
   overflow: hidden;
 }
 
-#input { 
+#input {
   padding-right: 1px;
   font-size: 15px; 
   border-right: 1px solid #0d131a;
   animation: typing 800ms infinite; 
+  overflow: hidden;
 }
 
-#result { font-size: 12px; }
+#result { font-size: 11px; }
 
 @keyframes typing {
   from {
@@ -73,6 +74,15 @@ main {
 
 [data-type = equal] {
   background-color: #0d131a;
+}
+
+[data-type = undo] {
+  display: flex;
+  align-items: center;
+}
+
+#backspace {
+  width: 15px;
 }
 
 sup { 

@@ -8,40 +8,46 @@
     <main>
       <div class="row">
         <div id="screen">
-          <div id="input"></div>
+          <div id="input">
+            <span id="operand1">0</span>
+            <span id="operator"></span>
+            <span id="operand2"></span>
+          </div>
           <div id="result"></div>
         </div>
-        <div class="btn" data-type="undo">&lt;x</div>
+        <div class="btn" data-type="undo">
+          <img id="backspace" src="backspace-small.png">
+        </div>
       </div>
       <div class="row">
-        <div class="btn" data-type="clear">c</div>
-        <div class="btn" data-key="^" data-type="op" data-calc="exponent">x<sup>y</sup></div>
-        <div class="btn" data-key="%" data-type="op" data-calc="remainder">%</div>
-        <div class="btn" data-key="/" data-type="op" data-calc="divide">&divide;</div>
+        <div class="btn" data-code="67" data-type="clear">c</div>
+        <div class="btn" data-code="69" data-key="^" data-type="op" data-calc="pow">x<sup>y</sup></div>
+        <div class="btn" data-code="83" data-key="√" data-type="op" data-calc="sqr">√x</div>
+        <div class="btn" data-code="111" data-key="/" data-type="op" data-calc="div">&divide;</div>
       </div>
       <div class="row">
-        <div class="btn" data-key="7" data-type="num">7</div>
-        <div class="btn" data-key="8" data-type="num">8</div>
-        <div class="btn" data-key="9" data-type="num">9</div>
-        <div class="btn" data-key="*" data-type="op" data-calc="multiply">&times;</div>
+        <div class="btn" data-code="103" data-key="7" data-type="num">7</div>
+        <div class="btn" data-code="104" data-key="8" data-type="num">8</div>
+        <div class="btn" data-code="105" data-key="9" data-type="num">9</div>
+        <div class="btn" data-code="106" data-key="*" data-type="op" data-calc="times">&times;</div>
       </div>
       <div class="row">
-        <div class="btn" data-key="4" data-type="num">4</div>
-        <div class="btn" data-key="5" data-type="num">5</div>
-        <div class="btn" data-key="6" data-type="num">6</div>
-        <div class="btn" data-key="-" data-type="op" data-calc="subtract">-</div>
+        <div class="btn" data-code="100" data-key="4" data-type="num">4</div>
+        <div class="btn" data-code="101" data-key="5" data-type="num">5</div>
+        <div class="btn" data-code="102" data-key="6" data-type="num">6</div>
+        <div class="btn" data-code="109" data-key="-" data-type="op" data-calc="minus">-</div>
       </div>
       <div class="row">
-        <div class="btn" data-key="1" data-type="num">1</div>
-        <div class="btn" data-key="2" data-type="num">2</div>
-        <div class="btn" data-key="3" data-type="num">3</div>
-        <div class="btn" data-key="+" data-type="op" data-calc="add">+</div>
+        <div class="btn" data-code="97" data-key="1" data-type="num">1</div>
+        <div class="btn" data-code="98" data-key="2" data-type="num">2</div>
+        <div class="btn" data-code="99" data-key="3" data-type="num">3</div>
+        <div class="btn" data-code="107" data-key="+" data-type="op" data-calc="add">+</div>
       </div>
       <div class="row">
-        <div class="btn" data-type="sign">+/-</div>
-        <div class="btn num" data-key="0" data-type="num">0</div>
-        <div class="btn num" data-key="." data-type="num">.</div>
-        <div class="btn" data-type="equal">=</div>
+        <div class="btn" data-code="78" data-key="-" data-type="sign">+/-</div>
+        <div class="btn" data-code="96" data-key="0" data-type="num">0</div>
+        <div class="btn" data-code="110" data-key="." data-type="num">.</div>
+        <div class="btn" data-code="13" data-type="equal">=</div>
       </div>
     </main>
   </body>
