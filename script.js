@@ -14,9 +14,9 @@ let operation = '';
 function operate(calc, n1, n2) {
   if (calc === 'add') {
     return Number(n1) + Number(n2);
-  } else if (calc === 'minus') {
+  } else if (calc === 'sub') {
     return n1 - n2;
-  } else if (calc === 'times') {
+  } else if (calc === 'mul') {
     return n1 * n2;
   } else if (calc === 'div') {
     return n1 / n2;
